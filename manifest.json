@@ -1,0 +1,25 @@
+{
+    "name": "TankTrouble Extension",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "description": "Private Extension for better UX",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.tanktrouble.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.tanktrouble.com/*"],
+            "css": ["contentScript.css"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
