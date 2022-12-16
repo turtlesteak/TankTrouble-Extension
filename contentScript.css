@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
-body {
+body, #chat * {
     font-family: 'Atkinson Hyperlegible', sans-serif !important;
+    /* Important tag is required for chatbox */
 }
